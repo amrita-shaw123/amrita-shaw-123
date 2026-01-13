@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Blood Donation Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🩸 Online Blood Donation Portal</h1>
+    <p class="tagline">Donate Blood, Save Lives ❤️</p>
+
+    <!-- Donor Registration -->
+    <div class="card">
+      <h2>Donor Registration</h2>
+      <input type="text" id="name" placeholder="Donor Name">
+      <input type="text" id="bloodGroup" placeholder="Blood Group (A+, O-, etc)">
+      <input type="text" id="city" placeholder="City">
+      <button onclick="addDonor()">Register Donor</button>
+      <p id="registerMsg"></p>
+    </div>
+
+    <!-- Search Donor -->
+    <div class="card">
+      <h2>Search Donor</h2>
+      <input type="text" id="searchBlood" placeholder="Enter Blood Group">
+      <button onclick="searchDonor()">Search</button>
+      <ul id="donorList"></ul>
+    </div>
+
+    <!-- Emergency Request -->
+    <div class="card emergency">
+      <h2>🚨 Emergency Blood Request</h2>
+      <input type="text" id="emergencyBlood" placeholder="Required Blood Group">
+      <button onclick="emergencyRequest()">Request Now</button>
+      <p id="emergencyMsg"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
